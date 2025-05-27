@@ -3,14 +3,15 @@
 import React from 'react';
 import Particles from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
+import type { Engine } from 'tsparticles-engine';
 import { FaFacebookF, FaLinkedinIn, FaInstagram, FaPinterestP } from 'react-icons/fa';
 import { TypeAnimation } from 'react-type-animation';
 
-const HeroSection = () => {
-  const particlesInit = async (main: any) => {
+const HeroSection: React.FC = () => {
+  const particlesInit = async (main: Engine) => {
     await loadFull(main);
   };
-
+ 
   return (
     <div className="relative h-screen bg-black text-white flex items-center justify-center text-center">
       {/* Particle Background */}
