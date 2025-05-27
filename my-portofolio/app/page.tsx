@@ -1,26 +1,12 @@
-import { Button, createTheme, ThemeProvider } from "flowbite-react";
+import React from "react";
+import Navbar from "@/components/navbar/Navbar";
 
-const customTheme = createTheme({
-  button: {
-    color: {
-      primary: "bg-red-500 hover:bg-red-600",
-      secondary: "bg-blue-500 hover:bg-blue-600",
-    },
-    size: {
-      lg: "px-6 py-3 text-lg",
-    },
-  },
-});
-
-function App() {
+const HomePage: React.FC = () => {
   return (
-    <ThemeProvider theme={customTheme}>
-      <Button color="primary">Red Button</Button>
-      <Button color="secondary" size="lg">
-        Large Blue Button
-      </Button>
-    </ThemeProvider>
+   <>
+   <Navbar />
+   </>
   );
-}
+};
 
-export default App;
+export default HomePage;

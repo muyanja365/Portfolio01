@@ -11,8 +11,8 @@ const Navbar = () => {
       <div className="flex items-center gap-4">
         <HiOutlineMenuAlt3 className="text-xl cursor-pointer" />
         <div className="flex items-center gap-2">
-          <Image src="/logo.svg" alt="Logo" width={24} height={24} />
-          <span className="text-lg font-semibold text-white">william.<span className="text-[#e4cc8c]">design</span></span>
+          {/* <Image src="/logo.svg" alt="Logo" width={24} height={24} /> */}
+          <span className="text-lg font-semibold text-white">Robert.<span className="text-[#e4cc8c]">Muyanja</span></span>
         </div>
       </div>
 
@@ -35,7 +35,7 @@ const Navbar = () => {
             alt="English"
             width={20}
             height={14}
-            className="rounded-sm"
+            className="sm"
           />
           <span>English</span>
           <MdArrowDropDown className="text-xl" />
